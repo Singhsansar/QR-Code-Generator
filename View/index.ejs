@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code Generator</title>
+    <style>
+        body{
+            background-image: url("https://img.freepik.com/free-vector/gradient-technological-background_23-2148884155.jpg?w=1380&t=st=1678988231~exp=1678988831~hmac=9bf83fb94872075d66b248d8c6b842896080615f310277ec60aca2d4e2496f31");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .container
+        {
+            margin-top: 10vh;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+        .mx-auto
+        {
+            padding: auto;
+            max-width: 60vw;
+        }
+
+        .data
+        {   
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-bottom: 1rem;
+            border: 3px solid black;
+            background-color: rgb(240, 207, 207);
+        }
+
+        .data:hover
+        {
+            background-color: white;
+        }
+
+        .btn
+        {
+            background-color: rgb(170, 170, 197);
+            width: 6vw;
+            height: 5vh ;
+            border-radius: 10px;
+        }
+        .btn:hover
+        {
+            background-color: white;
+            border: 3px solid rgb(23, 26, 189);
+        }
+
+        .form{
+            display: flex;
+            justify-content: center;}
+
+        .button{
+            display: flex;
+            justify-content: center;
+
+        }
+        .logo
+        {
+            color: white;
+            font-size: 2rem;
+            margin-top: 8px;
+            margin-left: 2vw;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <header><h1>QR Code Generator</h1></header>
+    </div>
+ <div class="container mx-auto">
+    <div class="form">
+        <form action="http://localhost:4600/scan" method="post">
+        <!-- <input type="text" placeholder="" class="data" >
+        <input type="text" placeholder="" class="data" >
+        <input type="text" placeholder="" class="data" >
+        <input type="text" placeholder="" class="data" >
+        <input type="text" placeholder="" class="data" > -->
+        <textarea name="text" id="text" class="data" cols="50" rows="15" placeholder="Enter URL or text here"></textarea>
+        
+        <div class="button" >
+            <input class="btn" type="submit" placeholder="Submit">
+        </div>
+    </form>
+    </div> 
+ </div>
+</body>
+</html>
